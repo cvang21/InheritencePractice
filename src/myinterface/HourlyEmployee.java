@@ -5,21 +5,34 @@ package myinterface;
  * @author Ching Vang
  */
 public class HourlyEmployee implements Employee {
-    @Override
-    public abstract void setStartDate();
+    private String name;
+    private String jobTitle;
+    private String aliasID;
+    private String startDate;
+   
     
     @Override
-    public abstract void setName(String name); 
-
-    @Override
-    public abstract String getAliasid();
+    public void setStartDate(String start){
+    this.startDate = start;}
     
     @Override
-    public void setAliasid(String aliasid); 
+    public void setName(String name){
+    this.name = name;}
 
     @Override
-    public String getJobtitle();
+    public String getAliasid(){
+    return this.aliasID;}
+    
+    @Override
+    public void setAliasid(String aliasid){
+    this.aliasID = aliasid;} 
 
     @Override
-    public void setJobtitle(String jobtitle);
+    public String getJobtitle(){
+    return this.jobTitle; }
+
+    @Override
+    public void setJobtitle(String jobtitle){
+    this.jobTitle = jobtitle;
+    }
 }

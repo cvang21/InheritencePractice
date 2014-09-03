@@ -6,7 +6,7 @@ package myinterface;
  * @author Ching Vang
  */
 public interface Employee {
-    public abstract void setStartDate();
+    public abstract void setStartDate(String start);
     
     public abstract void setName(String name); 
 

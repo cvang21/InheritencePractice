@@ -6,25 +6,32 @@ package myinterface;
  * @author Ching Vang
  */
 public class SalariedEmployee implements Employee {
+    private String name;
+    private String jobTitle;
+    private String aliasID;
+    private String startDate;
+   
+    @Override
+    public void setStartDate(String start){
+    this.startDate = start;}
     
     @Override
-    public abstract void setStartDate();
-    
-    @Override
-    public abstract void setName(String name); 
+    public void setName(String name){
+    this.name = name;} 
 
     @Override
-    public abstract String getAliasid(){
-    String alias;
-        return alias;
+    public String getAliasid(){
+    return this.aliasID;
     }
     
     @Override
-    public void setAliasid(String aliasid); 
+    public void setAliasid(String aliasid){} 
 
     @Override
-    public String getJobtitle();
+    public String getJobtitle(){
+    return this.jobTitle;}
 
     @Override
-    public void setJobtitle(String jobtitle);
+    public void setJobtitle(String jobtitle){
+    this.jobTitle = jobtitle;}
 }
