@@ -14,7 +14,7 @@ public class HourlyEmployee extends Employee {
     private String name;
     private String aliasid;
     private String jobtitle;
-    private String hourlyWage;
+    private double hourlyWage;
 
     public HourlyEmployee(String name, String aliasid){
         super(name, aliasid);

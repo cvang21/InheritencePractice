@@ -10,7 +10,7 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee {
     private String jobTitle;
     private String aliasID;
     private String startDate;
-    private String yearlySalary;
+    private double yearlySalary;
    
     @Override
     public void setStartDate(String start){

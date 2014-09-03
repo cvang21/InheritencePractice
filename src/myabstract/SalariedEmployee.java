@@ -9,7 +9,7 @@ public class SalariedEmployee extends Employee{
     private String name;
     private String aliasid;
     private String jobtitle;
-    private String salary;
+    private double salary;
 
     @Override
     public String getName() {

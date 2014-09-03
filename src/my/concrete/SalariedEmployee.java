@@ -8,14 +8,14 @@ public class SalariedEmployee extends Employee {
     private String name;
     private String aliasid;
     private String jobtitle;
+    private String salary;
 
     public SalariedEmployee(String name, String aliasid) {
         super(name, aliasid);
         this.name = name;
         this.aliasid = aliasid;
     }
-  
-    
+      
     @Override
     public String getName() {
         return name;
@@ -49,7 +49,14 @@ public class SalariedEmployee extends Employee {
     public void setJobtitle(String jobtitle) {
         this.jobtitle = jobtitle;
     }
+
+    public String getSalary() {
+        return salary;
+    }
+
+    public void setSalary(String salary) {
+        this.salary = salary;
+    }
     
-    
-    
+        
 }
