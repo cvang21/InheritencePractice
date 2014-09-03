@@ -6,14 +6,14 @@ package my.concrete;
  */
 public class SalariedEmployee extends Employee {
     private String name;
-    private String aliasid;
-    private String jobtitle;
-    private String salary;
+    private String aliasID;
+    private String jobTitle;
+    private String yearlySalary;
 
     public SalariedEmployee(String name, String aliasid) {
         super(name, aliasid);
         this.name = name;
-        this.aliasid = aliasid;
+        this.aliasID = aliasid;
     }
       
     @Override
@@ -32,30 +32,30 @@ public class SalariedEmployee extends Employee {
 
     @Override
     public String getAliasid() {
-        return aliasid;
+        return aliasID;
     }
 
     @Override
     public void setAliasid(String aliasid) {
-        this.aliasid = aliasid;
+        this.aliasID = aliasid;
     }
 
     @Override
     public String getJobtitle() {
-        return jobtitle;
+        return jobTitle;
     }
 
     @Override
     public void setJobtitle(String jobtitle) {
-        this.jobtitle = jobtitle;
+        this.jobTitle = jobtitle;
     }
 
     public String getSalary() {
-        return salary;
+        return yearlySalary;
     }
 
     public void setSalary(String salary) {
-        this.salary = salary;
+        this.yearlySalary = salary;
     }
     
         

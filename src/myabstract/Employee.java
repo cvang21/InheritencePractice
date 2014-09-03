@@ -8,9 +8,10 @@ package myabstract;
 public abstract class Employee {
     
     private String name;
-    private String aliasid;
-    private String jobtitle;
+    private String aliasID;
+    private String jobTitle;
 
+   
     public String getName() {
         return name;
     }
@@ -20,19 +21,19 @@ public abstract class Employee {
     }
 
     public String getAliasid() {
-        return aliasid;
+        return aliasID;
     }
 
     public void setAliasid(String aliasid) {
-        this.aliasid = aliasid;
+        this.aliasID = aliasid;
     }
 
     public String getJobtitle() {
-        return jobtitle;
+        return jobTitle;
     }
 
     public void setJobtitle(String jobtitle) {
-        this.jobtitle = jobtitle;
+        this.jobTitle = jobtitle;
     }
     
 }

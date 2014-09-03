@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 
 package my.concrete;
 
@@ -12,56 +8,50 @@ package my.concrete;
  */
 public class HourlyEmployee extends Employee {
     private String name;
-    private String aliasid;
-    private String jobtitle;
+    private String aliasID;
+    private String jobTitle;
     private double hourlyWage;
 
     public HourlyEmployee(String name, String aliasid){
         super(name, aliasid);
         this.name = name;
-        this.aliasid = aliasid;
+        this.aliasID = aliasid;
     }
-  
-    
-    @Override
+   
+
     public String getName() {
         return name;
     }
 
-    /**
-     *
-     * @param name
-     */
-    @Override
     public void setName(String name) {
         this.name = name;
     }
 
-    @Override
+
     public String getAliasid() {
-        return aliasid;
+        return aliasID;
     }
 
-    @Override
+
     public void setAliasid(String aliasid) {
-        this.aliasid = aliasid;
+        this.aliasID = aliasid;
     }
 
-    @Override
+
     public String getJobtitle() {
-        return jobtitle;
+        return jobTitle;
     }
 
-    @Override
+
     public void setJobtitle(String jobtitle) {
-        this.jobtitle = jobtitle;
+        this.jobTitle = jobtitle;
     }
 
-    public String getHourlyWage() {
-        return hourlyWage;
+    public double getHourlyWage() {
+        return this.hourlyWage;
     }
 
-    public void setHourlyWage(String hourlyWage) {
+    public void setHourlyWage(double hourlyWage) {
         this.hourlyWage = hourlyWage;
     }
         

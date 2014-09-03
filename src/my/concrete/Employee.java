@@ -6,13 +6,13 @@ package my.concrete;
  */
 public class Employee {
     private String name;
-    private String aliasid;
-    private String jobtitle;
+    private String aliasID;
+    private String jobTitle;
 
 
     public Employee(String name, String aliasid) {
         this.name = name;
-        this.aliasid = aliasid;
+        this.aliasID = aliasid;
     }
     
     
@@ -25,19 +25,19 @@ public class Employee {
     }
 
     public String getAliasid() {
-        return aliasid;
+        return aliasID;
     }
 
     public void setAliasid(String aliasid) {
-        this.aliasid = aliasid;
+        this.aliasID = aliasid;
     }
 
     public String getJobtitle() {
-        return jobtitle;
+        return jobTitle;
     }
 
     public void setJobtitle(String jobtitle) {
-        this.jobtitle = jobtitle;
+        this.jobTitle = jobtitle;
     }
     
     

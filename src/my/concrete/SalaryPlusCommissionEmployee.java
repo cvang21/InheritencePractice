@@ -8,7 +8,7 @@ package my.concrete;
 public class SalaryPlusCommissionEmployee extends SalariedEmployee{
     private String name;
     private String aliasid;
-    private String jobtitle;
+    private String jobTitle;
     private double commission;
 
     public SalaryPlusCommissionEmployee(String name, String aliasid) {
@@ -44,12 +44,12 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee{
 
     @Override
     public String getJobtitle() {
-        return jobtitle;
+        return jobTitle;
     }
 
     @Override
     public void setJobtitle(String jobtitle) {
-        this.jobtitle = jobtitle;
+        this.jobTitle = jobtitle;
     }
 
     public double getCommission() {
