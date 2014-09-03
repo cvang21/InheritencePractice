@@ -37,14 +37,17 @@ public class SalaryPlusCommisionEmployee extends SalariedEmployee {
         return jobtitle;
     }
 
+    @Override
     public void setJobtitle(String jobtitle) {
         this.jobtitle = jobtitle;
     }
 
+    @Override
     public String getSalary() {
         return salary;
     }
 
+    @Override
     public void setSalary(String salary) {
         this.salary = salary;
     }
