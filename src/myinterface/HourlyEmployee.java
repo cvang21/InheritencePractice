@@ -1,15 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package myinterface;
 
 /**
  *
- * @author Owner
+ * @author Ching Vang
  */
-public class HourlyEmployee {
+public class HourlyEmployee implements Employee {
+    @Override
+    public abstract void setStartDate();
     
+    @Override
+    public abstract void setName(String name); 
+
+    @Override
+    public abstract String getAliasid();
+    
+    @Override
+    public void setAliasid(String aliasid); 
+
+    @Override
+    public String getJobtitle();
+
+    @Override
+    public void setJobtitle(String jobtitle);
 }
