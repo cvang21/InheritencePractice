@@ -11,20 +11,28 @@ public class Employee {
     private String jobTitle;
 
 
-    public Employee(String name, String aliasid) {
-        this.name = name;
+    public Employee(String lname, String fname, String aliasid) {
+        this.lastName = lname;
+        this.firstName = fname;
         this.aliasID = aliasid;
     }
-    
-    
-    public String getName() {
-        return name;
+
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+     
     public String getAliasid() {
         return aliasID;
     }

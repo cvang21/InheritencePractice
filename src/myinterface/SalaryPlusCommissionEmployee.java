@@ -56,13 +56,11 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee {
         this.aliasID = aliasID;
     }
 
-    @Override
-    public String getYearlySalary() {
-        return yearlySalary;
+    public double getYearlySalary(){
+        return this.yearlySalary;
     }
 
-    @Override
-    public void setYearlySalary(String yearlySalary) {
+    public void setYearlySalary(double yearlySalary) {
         this.yearlySalary = yearlySalary;
     }
     
