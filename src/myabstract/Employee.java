@@ -7,17 +7,19 @@ package myabstract;
  */
 public abstract class Employee {
     
-    private String name;
+    private String firstName;
+    private String lastName;
     private String aliasID;
     private String jobTitle;
 
    
-    public String getName() {
-        return name;
+    public String getfirstName() {
+        return firstName;
+
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String fName) {
+        this.firstName = fName;
     }
 
     public String getAliasid() {

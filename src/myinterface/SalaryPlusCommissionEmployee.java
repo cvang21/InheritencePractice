@@ -6,7 +6,7 @@ package myinterface;
  * @author Ching Vang
  */
 public class SalaryPlusCommissionEmployee extends SalariedEmployee {
-     private String name;
+    private String name;
     private String jobTitle;
     private String aliasID;
     private String startDate;

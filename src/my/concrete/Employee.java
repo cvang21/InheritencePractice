@@ -5,7 +5,8 @@ package my.concrete;
  * @author Ching Vang
  */
 public class Employee {
-    private String name;
+    private String firstName;
+    private String lastName;
     private String aliasID;
     private String jobTitle;
 
