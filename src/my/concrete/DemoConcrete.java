@@ -13,7 +13,7 @@ package my.concrete;
 public class DemoConcrete {
     
     public static void main(String[] args) {
-        HourlyEmployee e1 = new HourlyEmployee("Bob","E1211");
+        HourlyEmployee e1 = new HourlyEmployee("Smith", "Bob","E1211");
         e1.setJobtitle("Secretary");
         e1.setHourlyWage(24.50);
         System.out.println(e1.getName()+" gets paid " + e1.getHourlyWage() + " per Hour");
