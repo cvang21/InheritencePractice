@@ -11,57 +11,20 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee {
     private String aliasID;
     private String startDate;
     private double yearlySalary;
-   
-    @Override
-    public void setStartDate(String start){
-    this.startDate = start;}
-    
-    @Override
-    public void setName(String name){
-    this.name = name;} 
+    private double commission;
 
-    @Override
-    public String getAliasid(){
-    return this.aliasID;
+    public SalaryPlusCommissionEmployee(double commission, String name, String jobTitle, String aliasID, String startDate, double yearlySalary) {
+        super(name, jobTitle, aliasID, startDate, yearlySalary);
+        this.commission = commission;
     }
     
-    @Override
-    public void setAliasid(String aliasid){} 
-
-    @Override
-    public String getJobtitle(){
-    return this.jobTitle;}
-
-    @Override
-    public void setJobtitle(String jobtitle){
-    this.jobTitle = jobtitle;}
-
-    @Override
-    public String getJobTitle() {
-        return jobTitle;
+    
+    public double getCommission() {
+        return commission;
     }
 
-    @Override
-    public void setJobTitle(String jobTitle) {
-        this.jobTitle = jobTitle;
-    }
-
-    @Override
-    public String getAliasID() {
-        return aliasID;
-    }
-
-    @Override
-    public void setAliasID(String aliasID) {
-        this.aliasID = aliasID;
-    }
-
-    public double getYearlySalary(){
-        return this.yearlySalary;
-    }
-
-    public void setYearlySalary(double yearlySalary) {
-        this.yearlySalary = yearlySalary;
+    public void setCommission(double commission) {
+        this.commission = commission;
     }
     
 }

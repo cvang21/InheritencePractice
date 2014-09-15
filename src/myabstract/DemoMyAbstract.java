@@ -28,7 +28,7 @@ public class DemoMyAbstract {
                      + "\nJob Title: " + employee.getJobTitle()
                      + "\nHourly Wage: ");          
 
-        System.out.println("");
+        System.out.println(d.message1);
         
     }
 }
