@@ -12,30 +12,46 @@ public abstract class Employee {
     private String aliasID;
     private String jobTitle;
 
+    public Employee(String firstName, String lastName, String aliasID, String jobTitle) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.aliasID = aliasID;
+        this.jobTitle = jobTitle;
+    }
    
-    public String getfirstName() {
+
+    public String getFirstName() {
         return firstName;
-
     }
 
-    public void setName(String fName) {
-        this.firstName = fName;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getAliasid() {
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getAliasID() {
         return aliasID;
     }
 
-    public void setAliasid(String aliasid) {
-        this.aliasID = aliasid;
+    public void setAliasID(String aliasID) {
+        this.aliasID = aliasID;
     }
 
-    public String getJobtitle() {
+    public String getJobTitle() {
         return jobTitle;
     }
 
-    public void setJobtitle(String jobtitle) {
-        this.jobTitle = jobtitle;
+    public void setJobTitle(String jobTitle) {
+        this.jobTitle = jobTitle;
     }
+
+    
     
 }

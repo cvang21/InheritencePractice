@@ -10,8 +10,7 @@ public interface Employee {
     public abstract void setStartDate(String start);
     
     public abstract void setName(String name);
-    
-
+ 
     public abstract String getAliasid();
     
     public abstract void setAliasid(String aliasid); 

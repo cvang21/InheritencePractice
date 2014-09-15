@@ -12,7 +12,7 @@ public class HourlyEmployee extends Employee {
 
     public HourlyEmployee(String lname, String fname, String aliasid){
         super(lname, fname, aliasid);
-        this.Wage = 0.00;
+        
     }
 
     public double getWage() {
