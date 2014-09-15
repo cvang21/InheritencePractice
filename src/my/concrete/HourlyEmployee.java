@@ -8,19 +8,27 @@ package my.concrete;
  */
 public class HourlyEmployee extends Employee {
 
-    private double hourlyWage;
+    private double Wage;
 
-    public HourlyEmployee(String name, String aliasid){
-        super(name, aliasid);
-        this.hourlyWage = 0.00;
-    }
-        public double getHourlyWage() {
-        return this.hourlyWage;
+    public HourlyEmployee(String lname, String fname, String aliasid){
+        super(lname, fname, aliasid);
+        this.Wage = 0.00;
     }
 
-    public void setHourlyWage(double hourlyWage) {
-        this.hourlyWage = hourlyWage;
+    public double getWage() {
+        return this.Wage;
     }
+   
         
+    public void setWage(double hourlyWage) {
+        
+        if (hourlyWage >= 0.0){
+            this.Wage = hourlyWage;
+            
+            }
+        else{
+        System.out.println("Must be a valid value!");
+        }
+    }   
     
 }

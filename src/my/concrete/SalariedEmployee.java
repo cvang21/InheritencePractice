@@ -6,20 +6,24 @@ package my.concrete;
  */
 public class SalariedEmployee extends Employee {
  
-    private String yearlySalary;
+    private double yearlySalary;
 
-    public SalariedEmployee(String name, String aliasid) {
-        super(name, aliasid);
-        this.yearlySalary = null;
+    public SalariedEmployee(String lname, String fname, String aliasid) {
+        super(lname,  fname, aliasid);
+        
     }
     
-    public String getSalary() {
-        return yearlySalary;
+    public double getSalary() {
+        return this.yearlySalary;
     }
 
-    public void setSalary(String salary) {
+    public void setSalary(double salary) {
+        if (salary >= 0.0){
         this.yearlySalary = salary;
+        }
+        else{
+            System.out.println("Not a valid Salary!");
+        }
     }
-    
         
 }

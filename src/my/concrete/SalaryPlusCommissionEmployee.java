@@ -9,20 +9,21 @@ public class SalaryPlusCommissionEmployee extends SalariedEmployee{
 
     private double commission;
 
-    public SalaryPlusCommissionEmployee(String name, String aliasid) {
-        super(name, aliasid);
-        this.commission = 0;
+    public SalaryPlusCommissionEmployee(String lname, String fname, String aliasid) {
+        super(lname, fname, aliasid);
+   
     }
- 
 
     public double getCommission() {
-        return commission;
+        return this.commission;
     }
 
     public void setCommission(double commission) {
+        if (commission >0){
         this.commission = commission;
-    }
-    
-    
-    
+            } else
+                {
+                    System.out.println("Not a valid Commission!");
+                }
+        }
 }

@@ -10,7 +10,9 @@ public class Employee {
     private String aliasID;
     private String jobTitle;
 
-
+    public Employee (){
+    }
+    
     public Employee(String lname, String fname, String aliasid) {
         this.lastName = lname;
         this.firstName = fname;
@@ -48,8 +50,6 @@ public class Employee {
     public void setJobtitle(String jobtitle) {
         this.jobTitle = jobtitle;
     }
-    
-    
     
     
 }
